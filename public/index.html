@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AuditCamp Analyzer</title>
+  <style>
+    #modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
+    #modalContent { background:#fff; margin:10% auto; padding:20px; width:80%; max-width:600px; }
+    #segment { margin-top:20px; }
+    #nav { margin-top:10px; }
+  </style>
+</head>
+<body>
+  <button id="openModal">New Context</button>
+
+  <div id="modal">
+    <div id="modalContent">
+      <textarea id="rawText" rows="10" cols="60" placeholder="Paste raw text here"></textarea>
+      <br>
+      <button id="analyze">Analyze</button>
+    </div>
+  </div>
+
+  <div id="results" style="display:none;">
+    <div id="segment"></div>
+    <div id="nav">
+      <button id="prev">&larr;</button>
+      <button id="next">&rarr;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
