@@ -1,0 +1,10 @@
+{
+  "name": "auditcamp",
+  "version": "1.0.0",
+  "description": "Simple CRUD app for pages with categories",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/pageCrud.test.js"
+  }
+}
